@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Scheduler Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Twitter Scheduler Bot</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Schedule a Tweet</h2>
+      <form id="tweet-form">
+        <label for="tweet-text">Tweet Content</label>
+        <textarea id="tweet-text" maxlength="280" placeholder="What’s happening?"></textarea>
+        <label for="schedule-time">Schedule Date & Time</label>
+        <input type="datetime-local" id="schedule-time" required>
+        <button type="submit">Schedule Tweet</button>
+      </form>
+      <p id="response-message"></p>
+    </section>
+    <section>
+      <h2>Test Twitter Connection</h2>
+      <button id="test-tweet-btn">Send Test Tweet</button>
+      <p id="test-response"></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
